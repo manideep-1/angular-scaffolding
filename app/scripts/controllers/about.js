@@ -8,7 +8,8 @@
  * Controller of the basicappApp
  */
 angular.module('basicappApp')
-  .controller('AboutCtrl', function () {
+  .controller('AboutCtrl', function ($scope) {
+    $scope.firstname='Manideep'
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
