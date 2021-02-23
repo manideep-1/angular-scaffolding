@@ -16,3 +16,9 @@ angular.module('basicappApp')
       'Karma'
     ];
   });
+  angular.module('basicappApp')
+.directive("w3TestDirective", function() {
+    return {
+        template : "<h1>h1-Made by a directive!(custom directive)</h1>"
+    };
+});

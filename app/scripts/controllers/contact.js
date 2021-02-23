@@ -4,7 +4,7 @@
  * @ngdoc function
  * @name basicappApp.controller:ContactCtrl
  * @description
- * # AboutCtrl
+ * # contactCtrl
  * Controller of the basicappApp
  */
 // angular.module('contact')
