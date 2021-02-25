@@ -8,7 +8,11 @@
  * Controller of the basicappApp
  */
 angular.module('basicappApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('AboutCtrl', function ($scope,$timeout,$location) {
+    $timeout(function () {
+      $scope.firstname = "anudeep";
+    }, 2000);
+    $scope.myUrl = $location.absUrl();
     $scope.firstname='Manideep'
     this.awesomeThings = [
       'HTML5 Boilerplate',

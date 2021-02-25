@@ -20,7 +20,8 @@
 
 
 angular.module('basicappApp')
-  .controller('ContactCtrl', function ($scope) {
+  .controller('ContactCtrl', function ($scope,$timeout) {
+    
     $scope.name="Manideep"
     this.awesomeThings = [
       'HTML5 Boilerplate',
