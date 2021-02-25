@@ -1,0 +1,25 @@
+<!-- <p>this is form view</p> -->
+<!-- <form ng-app="" novalidate>
+    First Name:<br>
+    <input type="text" ng-model="user.firstName"><br>
+    Last Name:<br>
+    <input type="text" ng-model="user.lastName">
+    <br><br>
+    <button ng-click="reset()">RESET</button>
+  </form>
+  <p>{{firstName}}</p>
+  <p>form = {{user}}</p>
+  <p>master = {{master}}</p> -->
+  <div  ng-controller="FormCtrl">
+  <input type="text" ng-model="ngmodeltest">
+<div ng-init="lastname='Laxmishetty'" >
+    <p ng-bind="firstname"></p>
+    <!-- <p>Total in dollar: <span ng-bind="quantity * cost"></span></p> -->
+    <p>Name:{{firstname +" "+lastname}}</p>
+    <p>{{ngmodeltest}}</p>
+    <p>{{lastname}}</p>
+    <p>url using location service{{myUrl}}</p>
+    <!-- <p>{{lastname}}</p> -->
+</div>
+    <w3-Test-Directive></w3-Test-Directive>
+</div>

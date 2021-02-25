@@ -1,12 +1,84 @@
 <p>This is the about view.</p>
 <input type="text" ng-model="ngmodeltest">
-<div ng-app="" ng-init="lastname='Laxmishetty'" >
+<div ng-init="lastname='Laxmishetty'" >
     
     <!-- <p>Total in dollar: <span ng-bind="quantity * cost"></span></p> -->
     <p>Name:{{firstname +" "+lastname}}</p>
+    
     <p>{{ngmodeltest}}</p>
 
     <p>url using location service{{myUrl}}</p>
     <!-- <p>{{lastname}}</p> -->
+    <h1>form</h1>
+    <form>
+        First Name:<br>
+        <input type="text" ng-model="user.firstName" ><br>
+        Last Name:<br>
+        <input type="text" ng-model="user.lastName" >
+        <br><br>
+        
+        <button ng-click="reset()">RESET</button><br>
+        Check to show a header:
+        <input type="checkbox" ng-model="myVar1"><br>
+        Pick a topic:
+        <input type="radio" ng-model="myVar" value="dogs">Dogs
+        <input type="radio" ng-model="myVar" value="tuts">Tutorials
+        <input type="radio" ng-model="myVar" value="cars">Cars
+        <br>
+        Select a topic:
+  <select ng-model="myVar2">
+    <option value="">
+    <option value="dogs">Dogs
+    <option value="tuts">Tutorials
+    <option value="cars">Cars
+  </select>
+      </form>
+      <div ng-switch="myVar">
+        <div ng-switch-when="dogs">
+           <h1>Dogs</h1>
+           <p>Welcome to a world of dogs.</p>
+        </div>
+        <div ng-switch-when="tuts">
+           <h1>Tutorials</h1>
+           <p>Learn from examples.</p>
+        </div>
+        <div ng-switch-when="cars">
+           <h1>Cars</h1>
+           <p>Read about cars.</p>
+        </div>
+      </div>
+      <br>
+      <div ng-switch="myVar2">
+        <div ng-switch-when="dogs">
+           <h1>Dogs</h1>
+           <p>Welcome to a world of dogs.</p>
+        </div>
+        <div ng-switch-when="tuts">
+           <h1>Tutorials</h1>
+           <p>Learn from examples.</p>
+        </div>
+        <div ng-switch-when="cars">
+           <h1>Cars</h1>
+           <p>Read about cars.</p>
+        </div>
+      </div>
+      <h1 ng-show="myVar1">checked</h1>
+      <p>{{firstName}}</p>
+      <p>form = {{user}}</p>
+      <p>master = {{master}}</p> -->
+      <p>Try writing in the input field:</p>
+
+<form name="myForm">
+<input name="myInput" ng-model="myInput" required>
+</form>
+
+<p>The input's valid state is:</p>
+<h1>{{myForm.myInput.$valid}}</h1>
+<form name="myForm1">
+    <input name="myInput1" ng-model="myInput1" type="email">
+  </form>
+  
+  <p>The input's valid state is:</p>
+  <h1>{{myForm1.myInput1.$valid}}</h1>
 </div>
     <w3-Test-Directive></w3-Test-Directive>
